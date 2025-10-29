@@ -1,0 +1,26 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+  }
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  button {
+    background: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button:hover {
+    background: #005fa3;
+  }

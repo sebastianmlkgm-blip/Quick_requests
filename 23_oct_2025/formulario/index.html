@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotiza tu KGM</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <form class="form-container" action="#" method="post">
+    <h2>COTIZA AQUÍ TU KGM</h2>
+
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido*" required>
+    <input type="email" id="correo" name="correo" placeholder="Correo electrónico*" required>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,10}" placeholder="Celular*" required>
+
+    <label for="modelo">Modelo KGM*:</label>
+    <select id="modelo" name="modelo" required>
+      <option value="">Selecciona una opción</option>
+      <option value="Actyon">Actyon Polo</option>
+      <option value="Torres">Torres Gol</option>
+      <option value="Tívoli">Tívoli Nivus</option>
+      <option value="Rexton G4">Rexton G4 Nivus</option>
+      <option value="Korando">Korando Nivus</option>
+      <option value="Rexton Sports">Rexton Sports</option>
+    </select>
+
+    <label for="sede">Sede*:</label>
+    <select id="sede" name="sede" required>
+      <option value="">Selecciona una opción</option>
+      <option value="calle13">Calle 13 #43-07 (calle 13)</option>
+      <option value="toberin">Carrera 20 #169-12 (Toberín)</option>
+    </select>
+
+    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Observaciones"></textarea>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="acepta" name="acepta" required>
+        <label for="acepta">
+            Acepta el <a href="#">Tratamiento de Datos y Política de Privacidad</a>.
+        </label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
